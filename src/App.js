@@ -1,15 +1,14 @@
 import React from 'react';
 import { Component } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import MenuAdmin from "./components/MenuAdmin"
-import PageInicio from './components/PageInicio'
-import PageEventos from './components/PageEventos';
-import PageUsuarios from './components/PageUsuarios';
-
-
-import MenuInicial from './components/MenuInicial';
-import PageLogin from './components/PageLogin';
-import PageLogout from './components/PageEventos';
+import PageLogin from './componentes/PageLogin';
+import PageInicio from './componentes/PageInicio';
+import PageDeportes from './componentes/PageDeportes'
+import PageEquipos from './componentes/PageEquipos'
+import PageUsuarios from './componentes/PageUsuarios'
+import PageEventos from './componentes/PageEventos'
+import MenuInicial from './componentes/MenuInicial'
+import './App.css';
 
 
 class App extends Component {
@@ -17,14 +16,17 @@ class App extends Component {
   render() {
     return (
       <Router>
-        <MenuInicial />
+      <MenuInicial />
         <Routes>
           <Route path='/' element={<PageInicio />} />
+          <Route path='/PageInicio' element={<PageInicio />} />
           <Route path='/PageLogin' element={<PageLogin />} />
           <Route path='/PageEventos' element={<PageEventos />} />
-          
+          <Route path='/PageDeportes' element={<PageDeportes />} />
+          <Route path='/PageEquipos' element={<PageEquipos />} />
+          <Route path='/PageUsuarios' element={<PageUsuarios />} />
         </Routes>
-      </Router>
+    </Router>
 
       /*<Router>
         <MenuAdmin />
