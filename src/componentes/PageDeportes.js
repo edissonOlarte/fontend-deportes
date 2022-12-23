@@ -6,10 +6,10 @@ import { faEdit, faTrashAlt } from '@fortawesome/free-solid-svg-icons';
 import { Modal, ModalBody, ModalFooter, ModalHeader } from 'reactstrap';
 //import env from 'react-dotenv'
 
-const url = process.env.REACT_APP_URL_DEPORTES
-const fieldId = process.env.REACT_APP_FIELD_ID_DEPORTES
-//const url = 'http://localhost:9000/api/deportes'
-//const fieldid = 'dep_id'
+//const url = process.env.REACT_APP_URL_DEPORTES
+//const fieldId = process.env.REACT_APP_FIELD_ID_DEPORTES
+const url = 'http://localhost:9000/api/deportes'
+const fieldid = 'dep_id'
 
 
 class  PageDeportes extends Component {

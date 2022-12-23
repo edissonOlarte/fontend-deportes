@@ -5,10 +5,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEdit, faTrashAlt } from '@fortawesome/free-solid-svg-icons';
 import { Modal, ModalBody, ModalFooter, ModalHeader } from 'reactstrap';
 
-const url = process.env.REACT_APP_URL_USUARIOS
-const field_Id = process.env.REACT_APP_FIELD_ID_USUARIO
-//const url = 'http://localhost:9000/api/usuarios'
-//const field_id = 'usu_id'
+//const url = process.env.REACT_APP_URL_USUARIOS
+//const field_Id = process.env.REACT_APP_FIELD_ID_USUARIO
+const url = 'http://localhost:9000/api/usuarios'
+const field_id = 'usu_id'
 
 class PageUsuarios extends Component{
 

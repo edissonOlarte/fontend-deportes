@@ -7,15 +7,15 @@ import { Modal, ModalBody, ModalFooter, ModalHeader } from 'reactstrap';
 
 import Select from "react-select";
 
-const urlEventos = process.env.REACT_APP_URL_EVENTOS
+/*const urlEventos = process.env.REACT_APP_URL_EVENTOS
 const urlDeportes = process.env.REACT_APP_URL_DEPORTES
 const urlEquipos = process.env.REACT_APP_URL_EQUIPOS
-const fieldId= process.env.REACT_APP_FIELD_ID_EVENTO
+const fieldId= process.env.REACT_APP_FIELD_ID_EVENTO*/
 
-/*const urlEventos = 'http://localhost:9000/api/eventos'
+const urlEventos = 'http://localhost:9000/api/eventos'
 const urlDeportes = 'http://localhost:9000/api/deportes'
 const urlEquipos = 'http://localhost:9000/api/equipos'
-const fieldId= 'eve_id'*/
+const fieldId= 'eve_id'
 
 class  PageEventos extends Component {
   state = {
