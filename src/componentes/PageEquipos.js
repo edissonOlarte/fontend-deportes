@@ -8,7 +8,8 @@ import { Modal, ModalBody, ModalFooter, ModalHeader } from 'reactstrap';
 
 const url = process.env.REACT_APP_URL_EQUIPOS
 const fieldId = process.env.REACT_APP_FIELD_ID_EQUIPO
-
+//const url = 'http://localhost:9000/api/equipos'
+//const fieldId = 'equ_id'
 
 class  PageEquipos extends Component {
   state = {

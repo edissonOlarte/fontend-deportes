@@ -8,6 +8,8 @@ import { Modal, ModalBody, ModalFooter, ModalHeader } from 'reactstrap';
 
 const url = process.env.REACT_APP_URL_DEPORTES
 const fieldId = process.env.REACT_APP_FIELD_ID_DEPORTES
+//const url = 'http://localhost:9000/api/deportes'
+//const fieldid = 'dep_id'
 
 
 class  PageDeportes extends Component {
@@ -50,7 +52,7 @@ class  PageDeportes extends Component {
 
 //PUT
   peticionPut = () => {
-    axios.put(url + '/' + fieldId + '/' + this.state.form.dep_id, this.state.form)
+    axios.put(url + '/' + fieldid + '/' + this.state.form.dep_id, this.state.form)
     .then(response => {
       this.modalInsertar();
       this.peticionGet();
@@ -61,7 +63,7 @@ class  PageDeportes extends Component {
 
   //DELETE
   peticionDelete = () => {
-    axios.delete(url + '/' + fieldId + '/' + this.state.form.dep_id)
+    axios.delete(url + '/' + fieldid + '/' + this.state.form.dep_id)
     .then(response => {
       this.modalEliminar();
       this.peticionGet();
